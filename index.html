@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <ol>
+        <li><a href="http://www.zmeuga.ru/"  id="#warn">Абсолютная гиперссылка на главную страницу сайта</a></li>
+        <li><a href="https://vk.com/">Абсолютная ссылка на главную в протоколе https</a></li>
+        <li><a href="ftp://example.com/myfile.zip">Ссылка на файл на сервере FTP без авторизации</a></li>
+        <li><a href="ftp://user:password@example.com/myfile.zip">Ссылка на файл на сервере FTP c авторизацией</a></li>
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/Гитлер, Адольф#Юность">Ссылка на фрагмент страницы некоторого сайта</a>
+        </li>
+        <li><a href="#anchor">Cсылка на фрагмент текущей страницы</a></li>
+        <li>Cсылка с<a href="https://example.com/catalog/phone7page=2&perpage=15"> двумя параметрами</a></li>
+        <li>
+            <ul>
+                <li><a href="#warn" title="Тематика">Оглавление</a></li>
+                <li><a href="#warn" title="Основная информация">Основной материал</a></li>
+            </ul>
+        </li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a href="http://www.zmeuga.ru/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам </a></li>
+        <li><noindex--><a href="https://vk.com/">Ссылка, запрещенная для индексации поисковиками </a></noindex--></li>
+        <li>
+            <p>
+                <a id="anchor" href="https://www.imdb.com/">Ссылка</a>
+            </p>
+        </li>
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/Кекс">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Keks_%281%29.JPG/420px-Keks_%281%29.JPG" width="90" height="90" alt="">
+            </a>
+        </li>
+        <li>
+            <map name="click">
+                <area shape="circle" coords="200,200,100" href="https://ru.wikipedia.org/wiki/Вишневский,_Борис_Лазаревич" alt="Борис Вишневский" title="Борис Вишневский">
+            </map>
+            <img alt="Кaртинка" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Photo_of_Boris_Vishnevskiy_from_Yabloko_site.jpg" width="300" height="300" usemap="#click">
+        </li>
+        <li><a href="./example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="./about/example.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../example.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../example.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+        <li><a href="/">Сокращенная ссылка на главную</a></li>
+        <li><a href="/example.html">Сокращенная ссылка на внутреннюю</a></li>
+    </ol>
+    <h1>Форма</h1>
+    <form action="/" method="post">
+        <label>
+            Имя:
+            <br>
+            <input name="USERNAME" value="Введите имя:">
+        </label>
+        <br>
+        <label>
+            E-mail:
+            <br>
+            <input name="EMAIL" value="Введите эл.почту" type="email">
+        </label>
+        <br>
+        <label>
+            Дата рождения:
+            <br>
+            <input name="BIRTHDAY" type="date">
+        </label>
+        <br>
+        Пол:
+        <br>
+        <label>
+            <input type="radio" name="pol" value="1">
+            Мужчина
+        </label>
+        <label>
+            <input type="radio" name="pol" value="2">
+            Женщина
+        </label>
+	<label>
+            <input type="radio" checked="checked" name="pol" value="2">
+            Уокер
+        </label>
+        <br>
+        Количество конечностей:
+        <br>
+        <label>
+            <input type="radio" checked="checked" name="telo" value="11">
+            0
+        </label>
+        <label>
+            <input type="radio" name="telo" value="22">
+            1
+        </label>
+        <label>
+            <input type="radio" name="telo" value="33">
+            2
+        </label>
+        <label>
+            <input type="radio" name="telo" value="44">
+            3
+        </label>
+        <label>
+            <input type="radio" name="telo" value="55">
+            9
+        </label>
+        <label>
+            <input type="radio" name="telo" value="66">
+            10
+        </label>
+        <br>
+        <label>
+            Сверхспособности:
+            <br>
+            <select name="POWERFUL" multiple="multiple">
+                <option value="1">Шевелить ушами</option>
+                <option value="2">Поднимать правую бровь</option>
+                <option value="3">Есть и не толстеть</option>
+                <option value="4">Понимать диффуры</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            Биография:
+            <br>
+            <textarea name="BIOGRAPHY">Я родился в 70 в Москве на краю города</textarea>
+        </label>
+        <br>
+        Я беру ипотеку на 450 лет :
+        <br>
+        <label>
+            <input type="checkbox" name="USERNAMEE">
+            Заберите у меня все
+        </label>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
