@@ -11,6 +11,10 @@ header {
     vertical-align: middle
 }
 
+#hrefy  {
+	width: 100%
+}
+
 #logo {
 	margin-left: 40%;
     float: left;
