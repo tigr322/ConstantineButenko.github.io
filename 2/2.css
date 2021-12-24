@@ -12,6 +12,7 @@ header {
 }
 
 #logo {
+	margin-left: 40%;
     float: left;
     display: inline-block;
     height: 150px;
