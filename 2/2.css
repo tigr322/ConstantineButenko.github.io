@@ -1,101 +1,201 @@
-header {
-    display: block;
-    width: 100%;
-    height: 180px;
-    padding: 15px 15px 0px 15px;
-    margin-left: -8px;
-    margin-top: -8px;
-    margin-bottom: 20px;
-    background-color: lightgreen;
-    border-bottom: 5px solid #bf1f1f;
-    vertical-align: middle
-}
-
-#logo {
-    float: left;
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-}
-
-.name {
-    text-align: center;
-    margin-top: 20px;
-    font-family: Arial, Calibri, sans-serif;
-    color: #lightgray;
-    font-size: 40pt;
+html,body
+{
+	
+	background-image: url('https://butovskiy.github.io/First-website/img/2.1.jpg');
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 15px;
+	font-family: Century Gothic;
 }
 
 
+header
+{
+	width: 100%;
+	height: 120px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	/*padding-top: 10px;*/
+	background-color: white;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
 
-
-nav {
-    display: block;
-    width: 960px;
-    height: 30px;
-    background-color: #blue;
-    margin: auto;
-    text-align: center;
-    padding-left: 10;
 }
 
-main {
-    display: block;
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: yellow;
-    border-left: 7px solid #bf1f1f;
-    border-right: 6px solid #bf1f1f;
+.cap
+{
+	/*background-color: blue;*/
+	margin: 0 auto;
+	width: 960px;
+	height: 100px;
 }
 
-table {
-    background-color #e3256b;
-    margin-left: 10px;
-    border-collapse: collapse;
+.logo
+{
+	float: left;
+	width: 120px;
+	height: 120px;
+	/*background-color: red;*/
 }
 
-.table1 {
-    background-color: #450734;
+#name-header
+{
+	color: gray;
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 50px;
+	/*margin-top: 40px;*/
+	/*background-color: red;*/
+
 }
 
-.header_table {
-    background-color: #471e18;
-    border: 1px solid blue;
+nav
+{
+	font-weight: bold;
+	display: block;
+	width: 960px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 30px;
 }
 
-tr {
-    background-color: #CC3300;
-    border-bottom: 1px solid #000;
+nav a
+{
+	color: gray;
+	margin-right: 50px;
+	margin-left: 50px;
+	text-decoration: none;
 }
 
-    tr td {
-        border-right: 1px solid black;
-    }
-
-        tr td:first-child {
-            border-left: 1px solid black;
-        }
-
-
-footer {
-    display: block;
-    width: 928px;
-    height: 30px;
-    padding: 14px 13px 10px 19px;
-    background-color: blue;
+nav a:hover
+{
+	color: #f2683a;
+	margin-right: 50px;
+	margin-left: 50px;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #f2683a;
+	/*text-decoration: none;*/
 }
 
-body {
-    background-color: cyan;
-    font-family: serif, "Times New Roman";
-    font-size: 28px;
+.content
+{
+	margin: 0 auto;
+	width: 960px;
+	font-size: 15px;
 }
 
 
-#links {
-    margin: auto 0;
+a 
+{
+	text-decoration: none;
+	color: #f2683a;
 }
 
-#form {
-    margin: 10px 10px 20px 10px;
+a:hover
+{
+	color: gray;
+}
+
+.tab
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+table
+{
+	color: gray;
+	padding: 15px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+td 
+{
+	padding: 10px;
+}
+
+}
+.form
+{
+	margin: 0 auto;
+	width: 960px;
+}
+
+form
+{
+	color: gray;
+	margin: 0 auto;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 35px;
+	padding-top: 10px;
+	width: 300px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+}
+
+footer
+{
+	margin-top: 50px;
+	background-color: white;
+	padding-left: 20px;
+	height: 60px;
+	padding-top: 50px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+}
+
+input
+{
+	font-family: Century Gothic;
+	background-color: transparent;
+	border: 2px solid transparent;
+}
+
+input:hover
+{
+	font-family: Century Gothic;
+	background-color: transparent;
+	border: 2px solid #f2683a;
+}
+select
+{
+	padding: 10px;
+	font-family: Century Gothic;
+	background-color: transparent;
+	border: 2px solid transparent;
+	height: 80px;
+}
+
+textarea
+{
+	padding: 10px;
+	font-family: Century Gothic;
+	background-color: transparent;
+	border: 2px solid transparent;
+}
+
+#bot 
+{
+	color: gray;
+	margin-top: 10px;
+	font-family: Century Gothic;
+	background-color: transparent;
+	border: 2px solid gray;
+}
+
+#bot:hover
+{
+	color: #f2683a;
+	margin-top: 10px;
+	font-family: Century Gothic;
+	background-color: transparent;
+	border: 2px solid #f2683a;
+}
+
+footer
+{
+	padding-left: 50px;
+	color: gray;
+	font-weight: bold;
 }
